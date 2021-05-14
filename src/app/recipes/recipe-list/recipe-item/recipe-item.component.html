@@ -1,0 +1,13 @@
+
+<a href="#" class="list-group-item list-group-item-action clearfix"
+   (click)="onSelectRecipe()">
+  <div class="float-left">
+    <h5 class="list-group-item-heading">Recipe Name : {{ recipe.name }}</h5>
+    <p class="list-group-item-text">Dicreption : {{ recipe.discreption }}</p>
+  </div>
+  <span class="float-right">
+        <img [src]="recipe.imagePath"
+             alt="{{recipe.name + 'image'}}"
+             class="img-responsive" style="max-height: 60px;">
+  </span>
+</a>

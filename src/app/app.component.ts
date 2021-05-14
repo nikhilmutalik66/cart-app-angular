@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cart-app-angular';
+
+  loadedFeature:string = 'recipe';
+
+  onNevigage(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
